@@ -111,6 +111,11 @@ class Livewire extends Action
         return $resolver->reconstruct($request)->setResolver($resolver);
     }
 
+    public function _processUrlKeys()
+    {
+        return true;
+    }
+
     public function handleException(Exception $exception): Json
     {
         if ($this->isDeveloperMode()) {

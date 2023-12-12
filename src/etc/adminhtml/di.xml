@@ -10,4 +10,9 @@
         <plugin name="Magewirephp_MagewireBackend::disableFormKeyHydrator"
                 type="Magewirephp\MagewireBackend\Plugin\DisableFormKeyHydratorPlugin"/>
     </type>
+
+    <type name="Magewirephp\Magewire\Model\Hydrator\Security">
+        <plugin name="Magewirephp_MagewireBackend::disableSecurityHydrator"
+                type="Magewirephp\MagewireBackend\Plugin\DisableSecurityHydratorPlugin"/>
+    </type>
 </config>
